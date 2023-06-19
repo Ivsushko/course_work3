@@ -1,3 +1,7 @@
 .coverage
 pyproject.toml
 .pytest_cache
+venv/
+.idea/
+__pycache__/
+*.pyc
