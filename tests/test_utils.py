@@ -3,7 +3,7 @@ from src.utils import load_json, get_sorted_data, find_card_or_account, card_for
 
 
 def test_load_json(dict_fixture):
-    assert load_json("json/test.json") == dict_fixture
+    assert load_json("test.json") == dict_fixture
 
 
 def test_get_sorted_data(dict_fixture, result_for_dict_fixture):
