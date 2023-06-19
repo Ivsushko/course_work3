@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Курсовая работа №3"
 authors = ["Ivan Sushko <vaneksushko@gmail.com>"]
 readme = "README.md"
-packages = [{include = "course_work_03"}]
+packages = [{include = "course_work03"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
