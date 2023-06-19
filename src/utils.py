@@ -11,7 +11,7 @@ def load_json(path):
     :param path: Принимает файл
     :return: Возвращает список словарей
     """
-    with open(path, 'r', encoding='utf-8') as file:
+    with open(path, encoding='utf-8') as file:
         data = json.load(file)
         return data
 
