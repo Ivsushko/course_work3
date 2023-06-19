@@ -1,0 +1,32 @@
+[
+        {
+            "id": 414894334,
+            "state": "EXECUTED",
+            "date": "2019-06-30T15:11:53.136004",
+            "operationAmount": {
+                "amount": "95860.47",
+                "currency": {
+                    "name": "руб.",
+                    "code": "RUB"
+                }
+            },
+            "description": "Перевод на счет",
+            "to": "Счет 43475624104328495820"
+        },
+        {},
+        {
+            "id": 596914981,
+            "state": "CANCELED",
+            "date": "2018-04-16T17:34:19.241289",
+            "operationAmount": {
+                "amount": "65169.27",
+                "currency": {
+                    "name": "USD",
+                    "code": "USD"
+                }
+            },
+            "description": "Перевод организации",
+            "from": "Visa Platinum 1813166339376336",
+            "to": "Счет 97848259954268659635"
+        }
+    ]

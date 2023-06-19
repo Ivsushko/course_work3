@@ -1,16 +1,22 @@
-# This is a sample Python script.
+from src.utils import load_json, date_formatting, get_sorted_data, find_card_or_account
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+database = load_json('operations.json')
+new_database = get_sorted_data(database)
+instance_operations = date_formatting(new_database)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+counter = 0
+for item in reversed(instance_operations):
+    amount = item.operationAmount["amount"]
+    currency = item.operationAmount["currency"]["name"]
+    if counter < 5 and item.state == "EXECUTED":
+        counter += 1
+        print(f'{item.date} {item.description}')
+        trans_to = find_card_or_account(item.to_)
+        if item.from_ is None:
+            print(f'{trans_to}')
+        else:
+            trans_from = find_card_or_account(item.from_)
+            print(f'{trans_from} -> {trans_to}')
+        print(f'{amount} {currency}\n')
+    else:
+        continue
