@@ -1,6 +1,6 @@
 from src.utils import load_json, date_formatting, get_sorted_data, find_card_or_account
 
-database = load_json('json/operations.json')
+database = load_json('operations.json')
 new_database = get_sorted_data(database)
 instance_operations = date_formatting(new_database)
 
