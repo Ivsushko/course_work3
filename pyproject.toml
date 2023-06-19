@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "course-work-03"
+name = "course_work3"
 version = "0.1.0"
-description = "course work 3"
-authors = ["Gleb Skotnikov <skotnikov.nsk@gmail.com>"]
+description = "Курсовая работа №3"
+authors = ["Ivan Sushko <vaneksushko@gmail.com>"]
 readme = "README.md"
 packages = [{include = "course_work_03"}]
 
